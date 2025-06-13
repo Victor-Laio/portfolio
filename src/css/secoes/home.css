@@ -1,0 +1,110 @@
+.home{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 70%;
+}
+
+.home .full-screen {
+    padding: 50px 0;
+    min-height: 86vh;
+}
+
+.home .texto-home {
+    letter-spacing: 2px;
+}
+
+.home .texto-home p{ 
+  animation: slideFromTop 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+@keyframes slideFromTop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home .texto-home h1{
+  background: linear-gradient(120deg, var(--cor-terciaria), var(--cor-primaria));
+  background-clip: text;    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+  text-transform: uppercase;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home .texto-home h2{
+  animation: slideOut 1s ease-out forwards;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+@keyframes slideOut {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.home .texto-home, .home .img-home {
+    flex: 0 0 50%;
+    /* ocupa 50% do tamanho e não faz grow nem shrink */
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+@media(max-width: 1280px) {
+    .home .texto-home, .home .img-home {
+        flex: 0 0 1000%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 var(--mobile-padding);
+    }
+    .home .img-home {
+        margin-top: 50px;
+    }
+}
+
+.home .img-home .img-box {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home .img-home .img-box img {
+    width: 100%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 10px;
+    border: 10px solid transparent var(--cor-primaria);
+}
+
+.home .texto-home p {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    margin-bottom: 10px;
+}
+
+.home .texto-home h1 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-gigante);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home .texto-home h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}

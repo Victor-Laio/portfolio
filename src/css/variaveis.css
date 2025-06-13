@@ -1,0 +1,24 @@
+:root {
+    --cor-primaria: #decd28;
+    --cor-secundaria: #e0b1a6;
+    --cor-terciaria: #316a00;
+    --cor-verdevivo:#70ff00;    
+    --cor-branca: #fff;
+    --cor-fundo-escuro: #000000;    
+    --cor-fundo-cinza-escuro: #282828;
+    --cor-fundo-cinza-claro: #353535;    
+  }
+    
+  :root {
+    --fonte-primaria: 'Poppins', sans serif;
+    --fonte-secundaria: 'Raleway', sans serif;
+    --fonte-estilo: 'Dancing Script', sans serif;
+    --fonte-gigante: 4.5rem;
+    --fonte-extra-grande: 3rem;
+    --fonte-grande: 2.4rem;
+    --fonte-normal: 1.6rem;
+  }
+  
+  :root {
+    --mobile-padding: 30px;
+  }

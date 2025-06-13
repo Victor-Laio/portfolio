@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html {
+    font-size: 62.5%;
+    color: var(--cor-branca);
+    font-weight: 300;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #282828;
+    background: radial-gradient(circle, var(--cor-fundo-cinza-escuro) 60%, var(--cor-fundo-escuro) 100%);
+    font-family: var(--fonte-primaria);
+    font-size: var(--fonte-normal);
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .alinhar-itens-no-centro {
+    align-items: center;
+  }
+
+  .redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--cor-branca);
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .redes-sociais a i {
+    line-height: 40px;
+    box-shadow: 1px 2px #222327, -3px -3px 3px #454545;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease;
+  }
+
+  .redes-sociais a i:hover {
+    color: var(--cor-secundaria);
+    box-shadow: 0 3px 20px var(--cor-secundaria);
+  }
+
+  .section{
+    padding: 7rem 0 7rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 60px 0;
+  }
+  
+  .section-title h2 {
+    font-size: var(--fonte-gigante);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .section-title h2::before,
+  .section-title h2::after {
+   content: "";
+   height: 1px;
+   background-color: var(--cor-primaria);
+   width: 100px;
+}
+  
+  .botao {
+    font-size: var(--fonte-grande);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-escuro);
+  }
+  
+  .botao:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    background: linear-gradient(120deg, var(--cor-primaria), var(--cor-verdevivo), var(--cor-primaria));
+    border-radius: 50px;
+    background-size: 200% auto;
+    background-position: right center;
+    color: var(--cor-fundo-escuro);
+    box-shadow: 0 1px 10px var(--cor-verdevivo);
+  }
