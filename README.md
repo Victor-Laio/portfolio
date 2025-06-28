@@ -17,6 +17,7 @@ Bem-vindo ao repositório do meu **Portfólio Pessoal**, desenvolvido utilizando
 
 - HTML5
 - CSS3
+- JavaScript
 
 ## 📸 Preview
 
